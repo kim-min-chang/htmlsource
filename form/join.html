@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get"></form>
+    <fieldset>
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" />
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <label for="date">생년월일</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div>
+        <label for="when">거주지를 선택해 주세요</label><br />
+        <select name="when" id="when">
+          <option value="서울시" selected>서울시</option>
+          <option value="강원도">강원도</option>
+          <option value="충청도">충청도</option>
+          <option value="경기도">경기도</option>
+        </select>
+      </div>
+      <div>
+        <label for="">취미</label>
+        <input type="checkbox" name="havy" id="book" />
+        <label for="book">독서</label>
+        <input type="checkbox" name="havy" id="trip" />
+        <label for="trip">여행</label>
+        <input type="checkbox" name="havy" id="movie" />
+        <label for="movie">영화감상</label>
+      </div>
+      <div>
+        <label for="">성별</label>
+        <input type="radio" name="sex" id="man" value="man"">
+        <label for="man">남성</label>
+        <input type="radio" name="sex" id="weman" value="weman" />
+        <label for="weman">여성</label>
+      </div>
+      <div>
+        <label for="pictur">사진을 등록해 주세요</label>
+        <input type="file" name="pictur" id="pictur" />
+      </div>
+      <div>
+        <label for="come">방문 경로를 말씀해 주세요</label><br />
+        <textarea name="come" id="come" cols="30" rows="10"></textarea>
+      </div>
+    </fieldset>
+    <div>
+      <button type="submit">회원가입</button>
+      <button type="reset">재작성</button>
+      <button type="submit">전송</button>
+    </div>
+  </body>
+</html>
