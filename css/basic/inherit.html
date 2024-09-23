@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 외부 파일로 작성된 css타입 -->
+    <link rel="stylesheet" href="./mystyle.css" />
+    <style>
+      /* css 작성가능 */
+      /* .area p {
+        color: green;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 
+        CSS : 상속 / 우선순위
+        
+        글자를 다루는 속성들이 주로 상속 됨
+
+        우선순위
+        1. 명시도 점수가 높은 선언이 우선함
+        !important > 인라인선언 > 아이디 > 클래스 > 태그 > 전체 > 상속 
+        2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선함
+        3. 가상요소(::before,::after) : 태그 선택자와 동일한 점수
+           가상클래스(:hover,:focus) : 클래스 선택자와 동일한 점수
+           부정선택자(:not(선택자)) : :not()자체는 점수가 없고 선택자에 의해서만 점수 부여됨
+    -->
+    <div class="ecosystem">
+      <div class="animal">
+        동물
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <div class="plant">식물</div>
+    </div>
+    <div class="area">
+      <p id="text" style="color: brown">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste totam ad
+        aut sint nesciunt quos quae autem accusamus id eum? Molestias beatae,
+        velit minus ab laboriosam et? Doloremque placeat praesentium quas
+        dolorum animi autem deleniti eligendi sequi fugit eaque cum, velit culpa
+        earum eveniet id, ex doloribus voluptatum laborum assumenda.
+      </p>
+      <p id="text2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fuga
+        iusto possimus fugit ab totam, at impedit aperiam vitae qui harum
+        suscipit esse incidunt eaque amet necessitatibus voluptas dolore
+        pariatur repudiandae quos cum tempore quidem repellendus molestiae!
+        Debitis accusantium voluptatem eveniet perferendis! Vitae necessitatibus
+        temporibus iusto dicta nihil laudantium unde?
+      </p>
+    </div>
+  </body>
+</html>
