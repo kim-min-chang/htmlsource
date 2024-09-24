@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .overflow {
+        /* 
+        overflow : 요소의 크기 이상으로 내용(자식요소)이 넘쳤을때 처리
+            1) visible(default) : 넘친 부분을 그대로 보여줌
+            2) auto : 넘친 부분이 있는 경우 잘래내고 , 스크롤바를 이용해서 볼 수 있도록 함
+            3) hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+            4) scroll : 넘친 부분이 있는 경우 잘라내고, 가로,세로 스크롤바를 이용해서 볼 수 있도록 함
+        */
+        /* block => width : auto(100%),height */
+        height: 100px;
+        background-color: silver;
+        border: 1px solid red;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+      numquam expedita voluptatum ducimus sunt veritatis! Natus quam deserunt
+      fugiat labore? Voluptatibus velit atque corporis laudantium animi placeat
+      veritatis. Dignissimos in fugit, beatae, eligendi illo quibusdam sunt
+      minus repellendus consectetur necessitatibus officia fuga enim atque! Eos
+      sint placeat sunt a maiores et eum, iste hic harum perferendis explicabo
+      illum tenetur, recusandae non dignissimos iusto voluptates mollitia magni
+      blanditiis. Eveniet quibusdam natus deserunt, harum obcaecati similique
+      doloremque iure. Saepe maiores ipsa minus debitis pariatur voluptatem,
+      aspernatur repellendus, magnam, quo explicabo velit dignissimos ea nihil?
+      Nulla aliquid voluptas sit odit, dicta laboriosam perferendis. Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Explicabo numquam expedita
+      voluptatum ducimus sunt veritatis! Natus quam deserunt fugiat labore?
+      Voluptatibus velit atque corporis laudantium animi placeat veritatis.
+      Dignissimos in fugit, beatae, eligendi illo quibusdam sunt minus
+      repellendus consectetur necessitatibus officia fuga enim atque! Eos sint
+      placeat sunt a maiores et eum, iste hic harum perferendis explicabo illum
+      tenetur, recusandae non dignissimos iusto voluptates mollitia magni
+      blanditiis. Eveniet quibusdam natus deserunt, harum obcaecati similique
+      doloremque iure. Saepe maiores ipsa minus debitis pariatur voluptatem,
+      aspernatur repellendus, magnam, quo explicabo velit dignissimos ea nihil?
+      Nulla aliquid voluptas sit odit, dicta laboriosam perferendis.
+    </p>
+  </body>
+</html>

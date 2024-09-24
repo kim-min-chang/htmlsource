@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+}
+
+.grid {
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  /* font-size: 0;
+  text-align: center; */
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  /* vertical-align: top; */
+}
+
+.a {
+  background-color: orange;
+}
+.b {
+  background-color: orangered;
+}
+.c {
+  background-color: red;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
